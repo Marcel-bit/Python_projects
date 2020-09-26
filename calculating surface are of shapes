@@ -1,0 +1,66 @@
+odgovor = input('Vnesite lik, ki želite izračunati mu ploščino.(pisite z malimi crkami ')
+
+
+def ploscina_kvadrat(dolzina_a):
+    return dolzina_a * dolzina_a
+
+def ploscina_trikotnik(dolzina_a2, visina_a2):
+    return dolzina_a2 * visina_a2 / 2
+
+def ploscina_pravokotnik(dolzina_a3, dolzina_b3):
+    return dolzina_a3 * dolzina_b3
+
+def ploscina_romba(dolzina_a4, visina_a4):
+    return dolzina_a4 * visina_a4
+
+def ploscina_deltoida(dolzina_f, dolzina_e):
+    return dolzina_e * dolzina_f / 2
+
+def ploscina_trapeza(dolzina_a5, dolzina_c, visina_a5):
+    return (dolzina_a5 + dolzina_c) * visina_a5 / 2
+
+def ploscina_pravokotni_trik (dolzina_a, dolzina_b):
+    return dolzina_a * dolzina_b / 2
+
+if odgovor == 'kvadrat':
+    dolzina_stranice = float(input('vnesite dolzino a stranice lika. '))
+    print(ploscina_kvadrat(dolzina_stranice))
+    
+elif odgovor == 'trikotnik':
+    dolzina_stranice = float(input('vnesite dolzino a stranice lika. '))
+    visina_a = float(input('vnesite visino a stranice lika. '))
+    print (ploscina_trikotnik(dolzina_stranice, visina_a))
+
+elif odgovor == 'pravokotnik':
+    dolzina_stranice = float(input('vnesite dolzino a stranice lika. '))
+    dolzina_stranice2 = float(input('vnesite dolzino b stranice lika. '))
+    print(ploscina_pravokotnik(dolzina_stranice, dolzina_stranice2))
+
+elif odgovor == 'romb':
+    dolzina_stranice = float(input('vnesite dolzino a stranice lika. '))
+    visina_a = float(input('vnesite visino a stranice lika. '))
+    print(ploscina_romba(dolzina_stranice, visina_a))
+
+elif odgovor == 'paralelogram':
+    dolzina_stranice = float(input('vnesite dolzino a stranice lika. '))
+    visina_a = float(input('vnesite visino a stranice lika. '))
+    print(ploscina_romba(dolzina_stranice, visina_a))
+
+elif odgovor == 'deltoid':
+    dolzina_f = float(input('vnesite dolzino f '))
+    dolzina_e = float(input('vnesite dolzino e '))
+    print(ploscina_deltoida(dolzina_f, dolzina_e))
+
+elif odgovor == 'trapez':
+    dolzina_a = float(input('vnesite dolzino a '))
+    dolzina_c = float(input('vnesite dolzino c '))
+    visina_a = float(input('vnesite visino stranice a '))
+    print(ploscina_trapeza(dolzina_a, dolzina_c, visina_a))
+
+elif odgovor == 'pravokotni trikotnik':
+    dolzina_a = float(input('vnesite dolzino a '))
+    dolzina_b = float(input('vnesite dolzino b '))
+    print(ploscina_pravokotni_trik(dolzina_a, dolzina_b))
+
+else:
+    None
