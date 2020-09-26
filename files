@@ -1,0 +1,14 @@
+file = 'D:\Marcel\python.txt'
+
+f = open(file, 'w')
+
+print(f.write('Its python'))
+#Changes files content to the string
+
+f = open(file, 'r')
+
+print(f.read())
+#prints out the file
+
+f.close()
+#closes the file
